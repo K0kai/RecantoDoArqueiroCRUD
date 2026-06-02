@@ -1,118 +1,171 @@
-Recanto do Arqueiro CRUD
+# Recanto do Arqueiro CRUD
 
-Objetivo do Sistema
+Projeto acadêmico desenvolvido com React para demonstrar operações CRUD em uma aplicação web. O sistema gerencia registros fictícios de arqueiros, permitindo criar, visualizar, atualizar e excluir informações durante a sessão.
 
-Recanto do Arqueiro CRUD é um projeto acadêmico que implementa operações CRUD (Create, Read, Update, Delete) em uma aplicação web. O sistema gerencia informações de arqueiros e seus dados, utilizando dados fictícios gerados automaticamente para demonstração. O projeto foi desenvolvido como atividade de aprendizado em desenvolvimento web com React.
+## Objetivo do Sistema
 
-Tecnologias Utilizadas
+O **Recanto do Arqueiro CRUD** tem como objetivo aplicar conceitos de desenvolvimento web com React por meio de uma interface simples para gerenciamento de dados.
 
-- React 19.2.6 - Biblioteca JavaScript para construção da interface
-- Vite 8.0.12 - Build tool e dev server de alta performance
-- ESLint - Ferramenta de análise estática de código
-- Babel - Transpilador JavaScript
-- Node.js - Ambiente de execução
+Como se trata de um projeto acadêmico, os dados utilizados são fictícios e gerados automaticamente para fins de demonstração.
 
-Pré-requisitos
+## Funcionalidades
+
+- Criar novos registros de arqueiros
+- Visualizar a lista de registros cadastrados
+- Atualizar informações existentes
+- Deletar registros
+- Utilizar dados fictícios gerados automaticamente
+
+## Tecnologias Utilizadas
+
+- **React 19.2.6**: biblioteca JavaScript para construção da interface
+- **Vite 8.0.12**: ferramenta de build e servidor de desenvolvimento
+- **ESLint**: ferramenta de análise estática de código
+- **Babel**: transpilador JavaScript
+- **Node.js**: ambiente de execução JavaScript
+
+## Pré-requisitos
 
 Antes de executar o projeto, certifique-se de ter instalado:
 
-- Node.js (versão 16 ou superior)
+- Node.js 16 ou superior
 - npm ou yarn
 
-Instruções de Execução
+## Como Executar o Projeto
 
-1. Clonar o Repositório
+### 1. Clonar o repositório
 
+```bash
 git clone https://github.com/K0kai/RecantoDoArqueiroCRUD.git
 cd RecantoDoArqueiroCRUD
+```
 
-2. Acessar a Pasta do Projeto
+### 2. Acessar a pasta do projeto
 
+```bash
 cd recanto_arq_crud
+```
 
-3. Instalar Dependências
+### 3. Instalar as dependências
 
+Com npm:
+
+```bash
 npm install
+```
 
-Ou, se estiver usando yarn:
+Ou com yarn:
 
+```bash
 yarn install
+```
 
-4. Iniciar o Servidor de Desenvolvimento
+### 4. Iniciar o servidor de desenvolvimento
 
+Com npm:
+
+```bash
 npm run dev
+```
 
 Ou com yarn:
 
+```bash
 yarn dev
+```
 
-A aplicação estará disponível em http://localhost:5173 (porta padrão do Vite)
+A aplicação estará disponível em:
 
-5. Build para Produção
+```text
+http://localhost:5173
+```
 
-Para criar uma build otimizada:
+## Build para Produção
 
+Para gerar uma versão otimizada da aplicação:
+
+Com npm:
+
+```bash
 npm run build
+```
 
 Ou com yarn:
 
+```bash
 yarn build
+```
 
-Os arquivos otimizados estarão na pasta dist/
+Os arquivos finais serão gerados na pasta `dist/`.
 
-6. Preview da Build de Produção
+## Preview da Build
 
+Para visualizar localmente a build de produção:
+
+```bash
 npm run preview
+```
 
-Estrutura do Projeto
+## Scripts Disponíveis
 
+| Script | Descrição |
+| --- | --- |
+| `npm run dev` | Inicia o servidor de desenvolvimento com hot reload |
+| `npm run build` | Cria uma build otimizada para produção |
+| `npm run lint` | Executa o linter para verificar a qualidade do código |
+| `npm run preview` | Visualiza a build de produção localmente |
+
+## Estrutura do Projeto
+
+```text
 RecantoDoArqueiroCRUD/
 ├── recanto_arq_crud/
-│   ├── src/                    (Código-fonte React)
-│   ├── index.html              (Arquivo HTML principal)
-│   ├── package.json            (Dependências do projeto)
-│   ├── vite.config.js          (Configuração do Vite)
+│   ├── src/              # Código-fonte React
+│   ├── index.html        # Arquivo HTML principal
+│   ├── package.json      # Dependências e scripts do projeto
+│   ├── vite.config.js    # Configuração do Vite
 │   └── ...
-├── .vscode/                    (Configurações do editor)
-└── README.md                   (Este arquivo)
+├── .vscode/              # Configurações do editor
+└── README.md             # Documentação do projeto
+```
 
-Scripts Disponíveis
+## Observações Importantes
 
-- npm run dev - Inicia o servidor de desenvolvimento com hot reload
-- npm run build - Cria uma build otimizada para produção
-- npm run lint - Executa o linter para verificar qualidade do código
-- npm run preview - Visualiza a build de produção localmente
+Este projeto foi desenvolvido exclusivamente no front-end. Os dados são armazenados apenas em memória durante a sessão, ou seja, não há persistência em banco de dados.
 
-Funcionalidades Principais
+## Contribuindo
 
-- Criar novos registros de arqueiros
-- Visualizar lista de todos os registros
-- Atualizar informações existentes
-- Deletar registros
-- Dados fictícios gerados automaticamente para demonstração
-
-Observações Importantes
-
-Este é um projeto acadêmico desenvolvido exclusivamente no front-end. Os dados são fictícios e gerados automaticamente, sendo armazenados apenas em memória durante a sessão. Nenhuma informação é persistida em banco de dados.
-
-Contribuindo
-
-Para sugestões de melhoria:
+Sugestões de melhoria são bem-vindas. Para contribuir:
 
 1. Faça um fork do repositório
-2. Crie uma branch para sua melhoria (git checkout -b feature/MinhaFeature)
-3. Commit suas mudanças (git commit -m 'Adiciona MinhaFeature')
-4. Push para a branch (git push origin feature/MinhaFeature)
+2. Crie uma branch para sua melhoria:
+
+```bash
+git checkout -b feature/MinhaFeature
+```
+
+3. Faça o commit das alterações:
+
+```bash
+git commit -m "Adiciona MinhaFeature"
+```
+
+4. Envie a branch para o repositório remoto:
+
+```bash
+git push origin feature/MinhaFeature
+```
+
 5. Abra um Pull Request
 
-Licença
+## Licença
 
 Este projeto é um trabalho acadêmico e está disponível para fins educacionais.
 
-Autor
+## Autor
 
 K0kai
 
-Suporte
+## Suporte
 
-Para dúvidas, abra uma issue no repositório.
+Em caso de dúvidas, abra uma issue no repositório.
